@@ -17,3 +17,12 @@ h6 {
   color: hsl(0, 0%, 83%);
 
 }
+
+.header {
+  display: flex;
+}
+
+.intro {
+  max-width: 800px;
+  width: 100%;
+}

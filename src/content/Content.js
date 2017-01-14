@@ -1,11 +1,15 @@
 import React from 'react';
 import BlogEntry from '../blog-entry/Blog-Entry';
+import './Content.css';
 
 var Content = React.createClass({
   showContent: function () {
     switch (this.props.currentTab) {
       case 1:
-        return (<BlogEntry/>);
+        return (<div>
+          <BlogEntry/>
+          <BlogEntry/>
+        </div>);
       case 2:
         return (<div>Tab About</div>);
       default:

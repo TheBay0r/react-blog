@@ -9,5 +9,10 @@
 }
 
 .logo-container {
-  display: table-caption;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  padding: 0;
 }

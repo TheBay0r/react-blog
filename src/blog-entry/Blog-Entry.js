@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
+import './Blog-Entry.css';
 
 class BlogEntry extends Component {
   getBlogEntry() {
@@ -10,8 +11,16 @@ class BlogEntry extends Component {
 
   render() {
     return (
-      <div className="Blog-Entry">
-        {this.getBlogEntry()}
+      <div className="blog-entry">
+        <div className="blog-date-container">
+          <div className="blog-date">
+            Saturday, 14. January 2017
+          </div>
+          <div className="spacer"/>
+        </div>
+        <div className="blog-content">
+          {this.getBlogEntry()}
+        </div>
       </div>
     );
   }

@@ -1,0 +1,22 @@
+.blog-entry {
+  max-width: 800px;
+  margin: 2em auto 4em auto;
+}
+
+.blog-content {
+  background-color: hsl(110, 47%, 100%);
+}
+
+.blog-date-container {
+  display: flex;
+}
+
+.blog-date {
+  float: left;
+  white-space: nowrap;
+  background-color: antiquewhite;
+}
+
+.spacer {
+  width: 100%;
+}
