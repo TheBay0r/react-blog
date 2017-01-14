@@ -1,0 +1,25 @@
+li {
+  display: inline-block;
+  margin: 5px;
+}
+
+.current > li {
+  display: inherit;
+  margin: inherit;
+  background-color: hsl(110, 47%, 100%);
+}
+
+a {
+  padding: 5px;
+  color: hsl(110, 47%, 100%);
+  text-decoration: none;
+}
+
+a:hover {
+  color: hsl(204, 11%, 45%);
+}
+
+.current > a {
+  color: hsl(110, 47%, 68%);
+  background-color: hsl(110, 47%, 100%);
+}

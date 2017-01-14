@@ -1,0 +1,13 @@
+.sm-logo {
+  height: 25px;
+  margin: 0.1em;
+}
+
+.sm-header {
+  float: left;
+  margin-right: 0.3em;
+}
+
+.logo-container {
+  display: table-caption;
+}
