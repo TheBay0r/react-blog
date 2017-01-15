@@ -1,0 +1,13 @@
+.about {
+  max-width: 800px;
+  text-align: justify;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+}
+
+.spacer {
+  width: 100%;
+}

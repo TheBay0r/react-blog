@@ -1,5 +1,6 @@
 import React from 'react';
-import BlogEntry from '../blog-entry/Blog-Entry';
+import BlogEntry from './blog/blog-entry/Blog-Entry';
+import About from './about/About';
 import './Content.css';
 
 var Content = React.createClass({
@@ -11,7 +12,7 @@ var Content = React.createClass({
           <BlogEntry/>
         </div>);
       case 2:
-        return (<div>Tab About</div>);
+        return (<About/>);
       default:
         return (<div>This is weird now!</div>);
     }
@@ -19,7 +20,7 @@ var Content = React.createClass({
 
   render: function () {
     return (
-      <div className="content">
+      <div>
         {this.showContent()}
       </div>
 
