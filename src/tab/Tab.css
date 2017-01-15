@@ -22,4 +22,5 @@ a:hover {
 .current > a {
   color: hsl(110, 47%, 68%);
   background-color: hsl(110, 47%, 100%);
+  padding: 5px;
 }
