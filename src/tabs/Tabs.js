@@ -10,7 +10,7 @@ var Tabs = React.createClass({
   render: function () {
     return (
       <nav>
-        <ul>
+        <ul className="tabList">
           {this.props.tabList.map(tab => (
             <Tab
               key={tab.id}

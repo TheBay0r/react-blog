@@ -6,7 +6,6 @@ class About extends Component {
   render() {
     return (
       <div className="content">
-        <div className="spacer"/>
         <div className="about">
           <p>
             I'm a passionate Quality Assurance Engineer, with the focus on creating a
@@ -38,7 +37,7 @@ class About extends Component {
           <h3>
             Work
           </h3>
-          <dl>
+          <dl className="workExperienceList">
             <dt>
               kununu GmbH
             </dt>
@@ -67,7 +66,7 @@ class About extends Component {
           <h3>
             Education
           </h3>
-          <dl>
+          <dl className="educationList">
             <dt>
               University of Applied Sciences Technikum Wien
             </dt>
@@ -81,8 +80,15 @@ class About extends Component {
               <i>2008 - 2011:</i> Computer Science (Bachelor)
             </dd>
           </dl>
+          <h3>
+            Certifications
+          </h3>
+          <ul className="certificationList">
+            <li>
+              <i>2012:</i> Certified Requirements Engineer
+            </li>
+          </ul>
         </div>
-        <div className="spacer"/>
       </div>
     );
   }
