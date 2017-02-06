@@ -2,11 +2,9 @@ import React, {Component} from 'react';
 import './Blog-Entry.css';
 
 class BlogEntry extends Component {
-  getBlogEntry() {
-    return `"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum."`;
+
+  toUTCString(timestamp) {
+    return new Date(timestamp).toUTCString();
   }
 
   render() {
@@ -14,12 +12,12 @@ class BlogEntry extends Component {
       <div className="blog-entry">
         <div className="blog-date-container">
           <div className="blog-date">
-            Saturday, 14. January 2017
+            {this.toUTCString(this.props.timestamp)}
           </div>
           <div className="spacer"/>
         </div>
         <div className="blog-content">
-          {this.getBlogEntry()}
+          {this.props.content}
         </div>
       </div>
     );
